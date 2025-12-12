@@ -1,3 +1,4 @@
+namespace RijSchool;
 internal class LesUur
 {
     internal int tijd;

@@ -1,3 +1,5 @@
+namespace RijSchool;
+
 internal class TheorieTest
 {
     internal int aantalFouten;

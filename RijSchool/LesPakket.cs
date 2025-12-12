@@ -1,3 +1,5 @@
+namespace RijSchool;
+
 internal class LesPakket
 {
     internal int urenGekocht;

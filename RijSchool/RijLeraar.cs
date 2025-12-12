@@ -1,3 +1,5 @@
+namespace RijSchool;
+
 internal class RijLeraar
 {
     internal string naam;

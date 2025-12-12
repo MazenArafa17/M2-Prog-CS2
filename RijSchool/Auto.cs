@@ -1,3 +1,5 @@
+namespace RijSchool;
+
 internal class Auto
 {
     internal bool automaat;
