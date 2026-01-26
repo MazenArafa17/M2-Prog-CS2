@@ -8,7 +8,7 @@ class Program
         program.Run();
     }
     internal void Run()
-    
+
     {
         Auto auto1 = new Auto()
         {
@@ -28,6 +28,7 @@ class Program
 
         RijLeraar rijleraar = new RijLeraar()
         {
+            auto = auto1,
             leeftijd = 30,
             naam = "John",
             zzp = false
@@ -37,43 +38,44 @@ class Program
         {
             auto = auto1,
             rijLeraar = rijleraar,
+
             tijd = 1130
         };
 
         LesPakket lesPakket = new LesPakket()
         {
-            urenGekocht,
-            urenVerbruikt,
-            examenPogingen,
-            automaat, Automaat
+            urenGekocht = 40,
+            urenVerbruikt = 10,
+            examenPogingen = 1,
+            automaat = false
         };
         TheorieTest theorieTest = new TheorieTest()
         {
-            geslaagd = false,
-            datum = new DateTime(2024, 11, 15)
+            gehaald = true,
+            afnameDatum = new DateTime(2024, 12, 15)
         };
         RijTest rijTest = new RijTest()
         {
-            geslaagd = false,
-            datum = new DateTime(2025, 2, 20)
+            gehaald = false,
+            afnameDatum = new DateTime(2025, 3, 20)
         };
 
         Student student1 = new Student()
         {
             lesPakket = lesPakket,
-            TheorieTest = theorieTest,
-            RijTest = rijTest,
-            RijLeraar = leraar,
+            theorieTest = theorieTest,
+            rijTest = rijTest,
+            rijLeraar = rijleraar,
             naam = "Mazen",
-            leeftijd = 18
+            leeftijd = 17
         };
         Student student2 = new Student()
         {
-            LesPakket = lesPakket,
-            TheorieTest = theorieTest,
-            RijTest = rijTest,
-            RijLeraar = leraar,
-            naam = "Quandale Dingle",
+            lesPakket = lesPakket,
+            theorieTest = theorieTest,
+            rijTest = rijTest,
+            rijLeraar = rijleraar,
+            naam = "Dingus",
             leeftijd = 29
         };
 
@@ -84,5 +86,5 @@ class Program
                 }
         };
 
-    }    
-}           
+    }
+}
